@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Carlos Javier Millán Villarejo">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <title>Web Estática</title>
+
+    <style>
+    
+    *{
+        font-family: "Oswald";
+    }                                                                                       
+nav{
+    position:fixed;
+    top: 0;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    background-color: #f8f8f8;
+    box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.25);
+    padding: 1em;
+    margin: 0;
+    color:black;
+    z-index: 9999;
+    
+    
+}
+nav a{
+    margin-right: 1.5em;
+    font-size: 140%;
+    color:rgb(7, 0, 0);
+    text-decoration: underline 2px rgba(182, 11, 11, 0);
+    transition: 0.3s ease;
+    font-weight: 700;
+    border: 3px solid black;
+    border-radius: 30px;
+    display: inline-block;
+    padding:0.2em 0.8em;
+    background-color: rgb(0, 153, 255);
+    transition: transform 0.3s;
+    transition: ease 0.3s;
+    
+    
+}
+nav a:hover{
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.25);
+    background-color: rgb(154, 189, 255);
+}
+   
+header{
+   text-align: center;
+   margin: 3em;
+   color:#18528C;
+   border:7px rgb(21, 82, 194);
+   margin: 0 auto;
+   padding: 1em;
+   box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.3);
+   width: fit-content;
+   border-radius: 15px;
+   border-style:ridge;
+   background-color: #f8f8f8;
+   margin-top: 90px;
+  }  
+   
+
+
+header h1{
+    text-decoration:underline ;
+    
+    color:#010a0a;
+   }
+
+header h2{
+    color:#d48842;
+   }
+  
+ .temas{
+    background-color: #fcfdfd;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.25);
+    width: 29vw;
+    justify-content: center;
+    text-align: center;
+    display: inline-block;
+    margin: 2em 1em;
+    font-size: 150%;
+    vertical-align: top;
+    border: 10px;
+    border-style:dashed;
+    border-width: 7px;
+    border-color:gold;
+    transition: transform 0.3s;
+    transition: ease 0.3s;
+    
+} 
+.temas h3{
+    color:crimson;
+    text-decoration: underline crimson;
+}  
+  
+.temas:hover{
+transform: translateY(-1em);
+box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.25);
+}
+
+.ejercicios{
+    border:5px solid black;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 0.5em;
+    border-radius: 20px;
+    padding: 0.3em;
+    border-style:double;
+    border-width: 12px;
+    padding:20px;
+    
+    
+}
+.ejercicios h4{
+    color:mediumpurple;
+    text-decoration: underline mediumpurple;
+}  
+  
+body{
+    background-image: url("../imagenes/fondo2.png");
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    justify-content: center;
+    text-align: center;
+}
+ 
+a{
+   border: 2px solid black;
+   border-radius: 50px;
+   padding: 0.1em 0.7em;
+   background-color: crimson;
+   color: white;
+   border-width: 3px;
+   transition: transform 0.3s;
+    transition: ease 0.3s;
+}
+
+a:hover{
+background-color: rgb(252, 127, 152);
+}
+
+footer{
+   border: 3px solid black;
+   background-color: #18528C;
+   color: #f8f8f8;
+}
+
+</style>
+
+</head>
+<body>
+
+ <!--Índice que vemos arriba de la Página-->
+    <nav>
+        <a href="#tema2">Tema 2</a>
+        <a href="#tema3">Tema 3</a>
+        <a href="#tema4">Tema 4</a>
+        <a href="#tema5">Tema 5</a>
+        <a href="#tema6">Tema 6</a>
+        <a href="#tema8">Tema 8</a>
+        <a href="#paginaexterna">Páginas Externas</a>
+        
+    </nav>
+
+<header>
+    <h1>Trabajo Final 1ºTrimestre de Lenguaje de Marcas</h1>
+    <h2>En esta pagina encontrarás todos los ejercicios recopilados del 1ºTrimestre de Lenguaje de Marcas</h2>
+    <h3>Hecho por Carlos Javier Millán Villarejo</h3>
+
+</header>
+
+<section class = "temas" id = "tema2">
+   <h3>Ejercicios Tema 2 </h3> <!--Tema de los respectivos Ejercicios-->
+<div class = "ejercicios"> 
+   <h4>Miniweb</h4> <!--Título de los Ejercicios-->
+   <p>Primera tarea hecha durante el curso</p> <!--Descripción del Ejercicio-->
+   <a href="../ejercicios_carlosmillan_tema2/miniweb/index.html">Click aquí</a> <!--Enlace al Ejercicio-->
+</div>
+</section>
+
+<section class = "temas" id = "tema3">
+   <h3>Ejercicios Tema 3 </h3> 
+<div class = "ejercicios">
+   <h4>Sistema Solar</h4> 
+   <p>Segunda tarea hecha durante el curso, trata de la información del sitema solar, los planetas que lo conforman y otras características.</p> 
+   <img src ="../imagenes/sistema solar.jpg" alt = "Sistema solar" width = 300px;  height = 250px;>
+<br><br>
+   <a href="../ejercicios_carlosmillan_tema3/sistemasolar/index.html">Click aquí</a> 
+</div>
+</section>
+
+<section class = "temas" id = "tema4">
+   <h3>Ejercicios Tema 4 </h3> 
+<div class = "ejercicios">
+   <h4>Ejemplos de Clase</h4> 
+   <p>Tercera tarea hecha durante el curso,trata de ejemplos de los diferentes tipos de listas, iframe, etiquetas de texto, rutas, etc.</p> 
+<a href="../ejercicios_carlosmillan_tema4/clase tema 4/rutas/index.html">Click aquí</a> 
+</div>
+</section>
+
+<section class = "temas" id = "tema5">
+   <h3>Ejercicios Tema 5 </h3>
+<div class = "ejercicios">
+   <h4>Tablas Y formularios</h4> 
+   <p>Cuarta tarea del curso, este tema se divide en dos tareas, por un lado hemos hecho distintos ejemplos de tablas, un horario y una calculadora, y por otro hemos hecho distintos tipos de formularios</p> 
+   </div>
+<div class = "ejercicios">
+   <h4>Formularios</h4>
+   <img src = "../imagenes/Formulario.jpg" alt = "Formulario" width = 200px;  height = 200px;>
+   <br><br>
+   <a href="../ejercicios_carlosmillan_tema5/ejercicio_formularios_carlosmillan_tema5/index.html">Click aquí</a>
+</div>
+<div class = "ejercicios">
+   <h4>Tablas</h4> 
+   <img src = "../imagenes/tablas.jpg" alt = "Tabla" width = 250px;  height = 200px;>
+   <br><br>
+   <a href="../ejercicios_carlosmillan_tema5/ejercicio_tablas_carlos_millán_tema5/index.html">Click aquí</a>
+</div>
+</section>
+
+<section class = "temas" id = "tema6">
+   <h3>Ejercicios Tema 6 </h3>
+<div class = "ejercicios">
+   <h4>Web Semántica</h4> 
+   <p>Quinta tarea hecha durante el curso, se trata de una web semántica que hicimos durante una clase.</p> 
+<a href="../ejercicios_carlosmillan_tema6/Web Semántica/index.html">Click aquí</a>
+</div>
+</section>
+
+<section class = "temas" id = "tema8">
+   <h3>Ejercicios Tema 8 </h3>
+<div class = "ejercicios">
+   <h4>Modelos de Cajas </h4> 
+   <p>Última tarea hecha durante el curso, aunque esta se divide en dos, varios ejercicios de cajgas, de figuras, etc y unos ejercicios de fuentes y de un menú de iconos. </p> 
+</div>
+<div class = "ejercicios">
+   <h4>Ejercicios de Cajas </h4> 
+   <img src = "../imagenes/cajas.jpg" alt = "Cajas" width = 430px;  height = 180px;>
+   <br><br>
+   <a href="../ejercicios_carlosmillan_tema8/Ejercicio_de_cajas/index.html">Click aquí</a>
+
+</div>
+<div class = "ejercicios">
+   <h4>Fuentes css y Menú de Iconos </h4> 
+   <img src = "../imagenes/iconos.jpg" alt = "Iconos" width = 300px;  height = 200px;>
+   <br><br>
+   <a href="../ejercicios_carlosmillan_tema8/ModeloCaja/">Click aquí</a>
+</div>
+</section>
+
+<section class = "temas" id = "paginaexterna">
+   <h3>Página Externa </h3>
+<div class = "ejercicios">
+   <h4>Free Code Camp</h4> 
+   <p>Plataforma gratuita diseñada para enseñar programación y desarrollo web (HTML, CSS, JavaScript).</p> 
+   <a href="https://www.freecodecamp.org/">Click Aquí</a>
+</div>
+</section>
+
+<section class = "temas" id = "paginaexterna">
+   <h3>Página externa </h3>
+<div class = "ejercicios">
+   <h4>DEV</h4> 
+   <p>Plataforma y comunidad en línea donde desarrolladores de todo el mundo comparten artículos, guías, noticias y experiencias sobre programación y tecnología.</p> 
+  <a href="https://dev.to/">Click Aquí</a>
+</div>
+</section>
+
+<section class = "temas" id = "paginaexterna">
+   <h3>Página externa </h3>
+<div class = "ejercicios">
+   <h4>Mozilla Developer Network</h4> 
+   <p>Recurso muy completo y confiable para desarrolladores web. Está mantenida por Mozilla y ofrece documentación, tutoriales y referencias técnicas (HTML, CSS y JavaScript).</p> 
+<a href="https://developer.mozilla.org/es/">Click Aquí </a>
+</div>
+</section>
+
+
+<footer>
+   <h3>Trabajo realizado por Carlos Javier Millán Villarejo 1ºDAW Davante Medac</h3>
+</footer>
+
+</body>
+</html>

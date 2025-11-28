@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Carlos Javier Millán Villarejo">
+    <title>Formulario de Pedido</title>
+
+<style>
+    body {width: 1000px; margin: auto;}
+</style>
+
+</head>
+<body>
+    <h1>Formulario de pedido</h1>
+    <form action = "procesar.php" method = "post"></form> 
+    <label for="nombre">Nombre del cliente:</label><br>
+    <input type="text" id="nombre" name="nombre_cliente" required>
+    <br><br>
+    <label for="email">Correo electrónico:</label><br>
+    <input type="email" id="email" name="correo_electronico" required>
+    <br><br>
+    <label for="fecha_entrega">Fecha deseada de entrega:</label><br>
+    <input type="date" id="fecha_entrega" name="fecha_entrega">
+            <small>dd/mm/aaaa</small>
+    <br><br>
+    <label for="color_producto">Color del producto:</label><br>
+    <input type="color" id="color_producto" name="color_producto" value="#000000"> 
+    <br><br>
+    <label for="cantidad">Cantidad (1 a 10):</label><br>
+    <input type="range" id="cantidad" name="cantidad" min="1" max="10" value="5">
+    <br><br>
+    <label for="accesorios">Accesorios adicionales:</label><br>
+        <select id="accesorios" name="accesorios[]" multiple size="4">
+                <option value="funda_protectora">Funda protectora</option>
+                <option value="bateria_adicional">Batería adicional</option>
+                <option value="soporte_mesa">Soporte de mesa</option>
+                <option value="kit_limpieza">Kit de limpieza</option>
+        </select>
+    <br><br>
+    <input type="checkbox" id="terminos" name="acepta_terminos" required>
+    <label for="terminos">Acepto los términos del pedido</label>
+    <br><br>
+    <label for="comentarios">Comentarios o instrucciones especiales:</label><br>
+    <textarea id="comentarios" name="comentarios_especiales" rows="5" cols="50" 
+        required placeholder="Indica detalles adicionales sobre tu pedido..."></textarea>
+    <br><br>
+    <input type="submit" value="Enviar pedido">
+    </form>
+
+<h2><a href="./index.html">Volver al index</a></h2>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="author" content="Carlos Javier Millán Villarejo">
+<title>Tablero de Ajedrez</title>
+<style>
+    
+  h1{
+    text-align: center; 
+  }
+  table {
+    border-collapse: collapse;
+    width: 400px; 
+    height: 400px; 
+    margin: auto; 
+    border:5px solid black;
+  }
+  
+  table td {
+   width: 50px;  
+   height: 50px; 
+   background-color: bisque; 
+  }
+
+  
+  table.horizontal tr:nth-child(even) td
+  {
+    background: rgb(8, 168, 8);
+  }
+
+
+  table.vertical td:nth-child(odd) 
+  {
+    background: rgb(8, 168, 8);
+  }
+
+  
+  table.tablero tr:nth-child(odd) td:nth-child(even), table.tablero tr:nth-child(even) td:nth-child(odd){
+    background: rgb(8, 168, 8);
+
+  }
+
+</style>
+</head>
+<body>
+ <main>
+   
+    <h1>Tablero de Ajedrez </h1>
+    <table class="tablero">
+    <tr><td><img src="././imagenes/black-towers.png" alt="Torre Negra"></td><td><img src="././imagenes/black-horse.png" alt="Caballo Negro"></td><td><img src="././imagenes/black-bishop.png" alt="Alfil Negro"></td><td><img src="././imagenes/black-queen.png" alt="Reina Negra"></td><td><img src="././imagenes/black-king.png" alt="Rey Negro"></td><td><img src="././imagenes/black-bishop.png" alt="Alfil Negro"></td><td><img src="././imagenes/black-horse.png" alt="Caballo negro"></td><td><img src="././imagenes/black-towers.png" alt="Torre Negra"></td></tr>
+    <tr><td><img src="././imagenes/black-pawn.png" alt="Peón Negro"></td><td><img src="././imagenes/black-pawn.png" alt="Peón Negro"></td><td><img src="././imagenes/black-pawn.png" alt="Peón Negro"></td><td><img src="././imagenes/black-pawn.png" alt="Peón Negro"></td><td><img src="././imagenes/black-pawn.png" alt="Peón Negro"></td><td><img src="././imagenes/black-pawn.png" alt="Peón Negro"></td><td><img src="././imagenes/black-pawn.png" alt="Peón Negro"></td><td><img src="././imagenes/black-pawn.png" alt="Peón Negro"></td></tr>
+    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td><img src="././imagenes/white-pawn.png" alt="Peón Blanco"></td><td><img src="././imagenes/white-pawn.png" alt="Peón Blanco"></td><td><img src="././imagenes/white-pawn.png" alt="Peón Blanco"></td><td><img src="././imagenes/white-pawn.png" alt="Peón Blanco"></td><td><img src="././imagenes/white-pawn.png" alt="Peón Blanco"></td><td><img src="././imagenes/white-pawn.png" alt="Peón Blanco"></td><td><img src="././imagenes/white-pawn.png" alt="Peón Blanco"></td><td><img src="././imagenes/white-pawn.png" alt="Peón Blanco"></td></tr>
+    <tr><td><img src="././imagenes/white-tower.png" alt="Torre blanca"></td><td><img src="././imagenes/white-horse.png" alt="Caballo Blanco"></td><td><img src="././imagenes/white-bishop.png" alt="Alfil Blanco"></td><td><img src="././imagenes/white-queen.png" alt="Reina Blanca"></td><td><img src="././imagenes/white-king.png" alt="Rey Blanco"></td><td><img src="././imagenes/white-bishop.png" alt="Alfil Blanco"></td><td><img src="././imagenes/white-horse.png" alt="Caballo Blanco"></td><td><img src="././imagenes/white-tower.png" alt="Torre Blanca"></td></tr>
+    
+  </table>
+
+<h2><a href="./index.html">Volver al index</a></h2>
+
+    
+</main>
+</body>
+</html>

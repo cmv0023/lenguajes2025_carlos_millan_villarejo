@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Carlos Javier Millán Villarejo">
+    <title>Formulario de registro al curso</title>
+
+<style>
+    body {width: 1000px; margin: auto;}
+</style>
+</head>
+<body>
+    <h1>Formulario de registro al curso</h1>
+    <form action = "procesar.php" method = "post">
+        
+    <label for="nombre">Nombre completo: (requerido)</label><br>
+    <input type="text" id="nombre" name="nombre_completo" required>
+    <br><br>
+    <label for="email">Correo electrónico: (requerido)</label><br>
+    <input type="email" id="email" name="correo_electronico" required>
+    <br><br>
+    <label for="edad">Edad:</label><br>
+    <input type="number" id="edad" name="edad" min="1" max="100"> 
+    <br><br>
+    <label for="curso">Curso de interés:</label><br>
+        <select id="curso" name="curso_interes">
+                <option value="informatica_basica" selected>Informática básica</option>
+                <option value="programacion_web">Programación web</option>
+                <option value="diseno_grafico">Diseño gráfico</option>
+        </select>
+    <br><br>
+    <p>Turno preferido:</p>
+    <input type="radio" id="manana" name="turno" value="Manana" checked>
+    <label for="manana">Mañana</label><br>
+    <input type="radio" id="tarde" name="turno" value="Tarde">
+    <label for="tarde">Tarde</label>
+    <br><br>
+    <input type="checkbox" id="condiciones" name="acepta_condiciones" required>
+    <label for="condiciones">Acepto las condiciones del curso</label>
+    <br><br>
+    <label for="comentarios">Comentarios adicionales:</label><br>
+    <textarea id="comentarios" name="comentarios" rows="4" cols="50" 
+        placeholder="Escribe aquí tus dudas o preferencias..."></textarea>
+    <br><br>
+    <input type="submit" value="Enviar registro">
+      </form>
+<h2><a href="./index.html">Volver al index</a></h2>
+
+    </body>
+</html>

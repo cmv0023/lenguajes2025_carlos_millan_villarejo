@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Carlos Javier Millán Villarejo">
+    <title>Box Model</title>
+
+<style>
+
+header{
+
+background-color: azure;
+box-shadow: 3px 3px 3px 4px;
+text-align: center;
+justify-content: center;
+width: fit-content;
+padding: 25px;
+margin: 0 auto;
+}
+nav{
+background-color:rgb(253, 138, 138);
+box-shadow: 2px 2px 2px 3px;
+text-align: center;
+justify-content: center;
+margin: 0 auto;
+width:fit-content;
+border: 1px solid black;
+margin-top: 15px;
+}
+
+.section{
+background-color:azure;
+justify-content: center;
+text-align: center;
+box-shadow: 1px 1px 1px 2px;
+border: 2px solid black;
+border-width: 5px;
+width:fit-content;
+margin: 0 auto;
+border-radius: 20px;
+margin-top: 16px;
+
+}
+
+footer{
+    padding:0.5em;
+    background-color: #fefffe;
+    border-radius:40px;
+    box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    text-align: center;
+    border: 10px white;
+    border-width: 15px;
+    width:200px ;
+    margin-top: 450px;
+    display: flex;
+    align-items: center;
+    
+    
+}
+footer h2{
+    justify-content: center;
+    text-align: center; 
+    margin:0 auto;
+    margin-top: 0px;
+    vertical-align: center;
+    color: black;
+    
+}
+
+
+</style>
+
+
+
+
+</head>
+<body>
+ 
+<header>
+    <h1>Box Model (Modelo de Caja)</h1>
+</header>
+  
+<nav>
+    <p>Es un concepto fundamental en el desarrollo web que describe cómo se estructuran los elementos en una página web y cómo se calculan sus dimensiones.</p>
+</nav>
+<section>
+
+<div class = "section">
+<p>Border (Border):Es un borde alrededor del relleno. El borde puede tener un color propio o verse afectado por el color de fondo del elemento. El borde tiene varias propiedades</p>
+<br>
+<p>Margen(Margin):Espacio transparente fuera del borde. No tiene un color de fondo propio, ni le afecta el color de fondo del elemento. Se utiliza para crear espacio entre elementos.</p>
+<br>
+<p>Contenido:Es el área real que contiene el texto, imágenes u otros elementos.</p>
+<br>
+<p>Relleno(Padding):Espacio transparente alrededor del contenido. No tiene un color de fondo propio. Le afecta el color de fondo del elemento</p>
+
+
+
+</div>
+
+</section>
+
+<footer>
+<h2><a href="./index.html">Volver al index</a></h2>
+</footer>
+</body>
+</html>

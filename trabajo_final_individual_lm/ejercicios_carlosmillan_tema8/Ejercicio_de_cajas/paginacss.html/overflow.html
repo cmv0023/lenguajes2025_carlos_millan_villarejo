@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Carlos Javier Millán Villarejo">
+    <title>Overflow</title>
+
+<style>
+
+header{
+
+background-color: azure;
+box-shadow: 3px 3px 3px 4px;
+text-align: center;
+justify-content: center;
+padding: 25px;
+margin: 0 auto;
+border-radius: 15px;
+}
+nav{
+background-color:rgb(253, 138, 138);
+box-shadow: 2px 2px 2px 3px;
+text-align: center;
+justify-content: center;
+margin: 0 auto;
+width:fit-content;
+border: 1px solid black;
+margin-top: 15px;
+border-radius: 15px;
+}
+
+.section{
+background-color:azure;
+justify-content: center;
+text-align: center;
+box-shadow: 1px 1px 1px 2px;
+border: 2px solid black;
+border-width: 5px;
+width:fit-content;
+margin: 0 auto;
+border-radius: 20px;
+margin-top: 16px;
+
+}
+footer{
+    padding:0.5em;
+    background-color: #fefffe;
+    border-radius:40px;
+    box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    text-align: center;
+    border: 10px white;
+    border-width: 15px;
+    width:200px ;
+    margin-top: 450px;
+    display: flex;
+    align-items: center;
+    
+    
+}
+footer h2{
+    justify-content: center;
+    text-align: center; 
+    margin:0 auto;
+    margin-top: 0px;
+    vertical-align: center;
+    color: black;
+    
+}
+</style>
+
+</head>
+<body>
+    
+<header>
+    <h1>Overflow</h1>
+</header>
+<nav>
+    <p>Controla el comportamiento de un contenedor cuando su contenido es más que el contenedor mismo y se
+    desborda.</p>
+</nav>
+
+<section class = "section">
+    <p><i><b>Visible:</b></i> Este es el valor por defecto. El contenido que se desborda simplemente se muestra fuera del contenedor, sobresaliendo visualmente.</p>
+    <br>
+    <p><i><b>Hidden:</b></i>El contenido que se desborda está oculto y no es visible. Esto puede ser útil cuando no quieres que el contenido que sobresale sea visible.</p>
+    <br>
+    <p><i><b>Scroll:</b></i>Se agrega una barra de desplazamiento al contenedor, permitiendo al usuario desplazarse para ver el contenido que está fuera de la vista.</p>
+    <br>
+    <p><i><b>Auto:</b></i>Similar a scroll, pero se agregarán barras de desplazamiento solo cuando sea necesario. Si el contenido se ajusta dentro del contenedor, no se mostrarán barras de desplazamiento.</p>
+</section>
+<footer>
+<h2><a href="./index.html">Volver al index</a></h2>
+</footer>
+</body>
+</html>
